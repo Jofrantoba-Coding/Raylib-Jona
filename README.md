@@ -26,13 +26,13 @@ Para instalar cada librería en el repositorio Maven local (`.m2`), utiliza los 
 ### Para `gltf-j-1.0.jar`
 
 ```bash
-mvn install:install-file -Dfile=C:\github\Raylib-Jona\loadmanualm2\gltf-j.jar -DgroupId=com.jofrantoba -DartifactId=gltf-j -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=C:\github\Raylib-Jona\loadmanualm2\gltf-j-1.0.jar -DgroupId=com.jofrantoba -DartifactId=gltf-j -Dversion=1.0 -Dpackaging=jar
 ```
 
 ### Para `VoxFileParser-0.3.jar`
 
 ```bash
-mvn install:install-file -Dfile=C:\github\Raylib-Jona\loadmanualm2\VoxFileParser-0.3.jar -DgroupId=com.jofrantoba -DartifactId=voxfileparser -Dversion=0.3 -Dpackaging=jar
+mvn install:install-file -Dfile=C:\github\Raylib-Jona\loadmanualm2\voxfileparser-0.3.jar -DgroupId=com.jofrantoba -DartifactId=voxfileparser -Dversion=0.3 -Dpackaging=jar
 ```
 
 ## Abrir el Proyecto en NetBeans
