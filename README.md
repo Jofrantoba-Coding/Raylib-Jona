@@ -5,31 +5,34 @@ Este proyecto utiliza **Raylib-Jona**, una integración con LWJGL para gráficos
 
 ## Configuración Inicial
 
-1. Clona el proyecto en tu máquina local y asegúrate de tener la siguiente estructura de carpetas en tu sistema:
-
-   ```
-   C:\github\Raylib-Jona\target\lib
-   ```
-
-2. Registra en tu repositorio Maven local (`.m2`) las siguientes librerías necesarias para el proyecto:
-
-   - **gltf-j-1.0.jar**
-   - **voxfileparser-0.3.jar**
-
-## Comandos para Registrar Librerías en el Repositorio Local de Maven
-
-Para instalar cada librería en el repositorio Maven local (`.m2`), ejecuta los siguientes comandos en la terminal.
-
-### Instalación de `gltf-j-1.0.jar`
+Primero, clona el proyecto en tu máquina local utilizando el siguiente comando:
 
 ```bash
-mvn install:install-file -Dfile=C:\github\Raylib-Jona\target\lib\gltf-j.jar -DgroupId=com.jofrantoba -DartifactId=gltf-j -Dversion=1.0 -Dpackaging=jar
+git clone https://github.com/Jofrantoba-Coding/Raylib-Jona.git
 ```
 
-### Instalación de `VoxFileParser-0.3.jar`
+En la carpeta `loadmanualm2` dentro del proyecto, encontrarás las librerías necesarias para registrarlas manualmente en tu repositorio Maven local (`.m2`).
+
+Asegúrate de tener la siguiente estructura de carpetas en tu sistema:
+
+   ```
+   C:\github\Raylib-Jona\loadmanualm2
+   ```
+
+## Registro de Librerías en el Repositorio Local de Maven
+
+Para instalar cada librería en el repositorio Maven local (`.m2`), utiliza los siguientes comandos:
+
+### Para `gltf-j-1.0.jar`
 
 ```bash
-mvn install:install-file -Dfile=C:\github\Raylib-Jona\target\lib\VoxFileParser-0.3.jar -DgroupId=com.jofrantoba -DartifactId=voxfileparser -Dversion=0.3 -Dpackaging=jar
+mvn install:install-file -Dfile=C:\github\Raylib-Jona\loadmanualm2\gltf-j.jar -DgroupId=com.jofrantoba -DartifactId=gltf-j -Dversion=1.0 -Dpackaging=jar
+```
+
+### Para `VoxFileParser-0.3.jar`
+
+```bash
+mvn install:install-file -Dfile=C:\github\Raylib-Jona\loadmanualm2\VoxFileParser-0.3.jar -DgroupId=com.jofrantoba -DartifactId=voxfileparser -Dversion=0.3 -Dpackaging=jar
 ```
 
 ## Abrir el Proyecto en NetBeans
