@@ -5,7 +5,7 @@ Este proyecto utiliza **Raylib-Jona**, una integración con LWJGL para gráficos
 
 ## Configuración Inicial
 
-Primero, clona el proyecto en tu máquina local utilizando el siguiente comando:
+Primero, clona el proyecto en tu máquina local en el directorio C:\github\ utilizando el siguiente comando:
 
 ```bash
 git clone https://github.com/Jofrantoba-Coding/Raylib-Jona.git
